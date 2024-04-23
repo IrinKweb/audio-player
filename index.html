@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-player</title>
+    <link rel="shortcut icon" href="/audio-player/svg/icons8-audio-player.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="background"></div>
+            <div class="player">
+                    <div class="cover-container"></div>
+                    <audio id="audio"></audio>
+                    <div class="text-container">
+                        <span class="artist-name">Kylie Minogue</span>
+                        <span class="song-name">In Your Eyes</span>
+                    </div>
+                    <div class="media-container">
+
+                        <div class="progress-container">
+                            <input class="seek-bar" type="range" id="seek-bar" value="0">
+                            <div class="time">
+                                <span id="current-time">0:00</span> <span id="total-time">3:21</span>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="prev-btn"> </button>
+                            <button class="play-btn"> </button>
+                            <button class="next-btn"> </button>
+                        </div>
+
+                        <div class="volume-container">
+                            <button class="mute-btn"></button>
+                            <input type="range" id="volume-bar" value="100">
+                            <button class="volume-btn"></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="year">
+                <p>2023</p>
+            </div>
+            <div class="school">
+                <a href="https://rs.school/js-stage0/" class="rss"></a>
+            </div>
+            <div class="profile">
+                <a href="https://github.com/IrinKweb">Irina Kipeneva</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
